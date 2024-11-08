@@ -1,0 +1,102 @@
+/* General Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container for the Courses */
+.courses-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Grid Layout for Courses */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Course Card Styling */
+.course-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Image Styling */
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Course Content */
+.course-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.course-card .instructor,
+.course-card .schedule {
+    font-weight: bold;
+    color: #333;
+}
+
+.course-card .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e74c3c;
+    padding: 0 20px 20px;
+}
+
+/* Enroll Button */
+.course-card .enroll-btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 0 0 8px 8px;
+    transition: background-color 0.3s ease;
+}
+
+.course-card .enroll-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}

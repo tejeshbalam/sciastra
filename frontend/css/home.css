@@ -1,0 +1,159 @@
+/* Home Page Layout */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 30px 0;
+}
+
+.hero-section {
+    text-align: center;
+    background-color: #0044cc;
+    color: white;
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background-color: #ff6f61;
+    padding: 12px 30px;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: #e85d4b;
+}
+
+/* Featured Courses Section */
+.featured-courses {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.course-card {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.course-card button {
+    background-color: #0044cc;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.course-card button:hover {
+    background-color: #0033aa;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    display: inline-block;
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.testimonial-card .author {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-btn {
+        padding: 10px 25px;
+    }
+
+    .featured-courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
